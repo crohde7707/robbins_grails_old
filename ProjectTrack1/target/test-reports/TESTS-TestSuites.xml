@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="HEN12" id="0" name="ProjectTests" package="projecttrack1" tests="1" time="1.102" timestamp="2013-10-27T22:59:03">
+      <properties />
+
+      <testcase classname="projecttrack1.ProjectTests" name="testSomething" time="0.894">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at projecttrack1.ProjectTests.testSomething(ProjectTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HEN12" id="1" name="TaskTests" package="projecttrack1" tests="1" time="0.151" timestamp="2013-10-27T22:59:04">
+      <properties />
+
+      <testcase classname="projecttrack1.TaskTests" name="testSomething" time="0.071">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at projecttrack1.TaskTests.testSomething(TaskTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HEN12" id="2" name="UserTests" package="projecttrack1" tests="1" time="0.132" timestamp="2013-10-27T22:59:05">
+      <properties />
+
+      <testcase classname="projecttrack1.UserTests" name="testSomething" time="0.129">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at projecttrack1.UserTests.testSomething(UserTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
