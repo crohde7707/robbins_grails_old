@@ -5,6 +5,8 @@ class User {
 	String password
 	String fullName
 	String email
+	
+	static hasMany = [projects: Project, tasks: Task]
 
     static constraints = {
     }
