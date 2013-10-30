@@ -4,10 +4,12 @@ class User {
 	String userName
 	String password
 	String fullName
-	String email
 	
-	static hasMany = [projects: Project, tasks: Task]
+	static hasMany = [projects : Project, tasks : Task]
 
     static constraints = {
+		userName(blank:false, unique:true)
+		fullName()
+		password(blank:false)
     }
 }

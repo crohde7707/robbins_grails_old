@@ -23,20 +23,11 @@
 			</g:if>
 			<ol class="property-list task">
 			
-				<g:if test="${taskInstance?.assignee}">
+				<g:if test="${taskInstance?.name}">
 				<li class="fieldcontain">
-					<span id="assignee-label" class="property-label"><g:message code="task.assignee.label" default="Assignee" /></span>
+					<span id="name-label" class="property-label"><g:message code="task.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="assignee-label"><g:link controller="user" action="show" id="${taskInstance?.assignee?.id}">${taskInstance?.assignee?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${taskInstance?.description}">
-				<li class="fieldcontain">
-					<span id="description-label" class="property-label"><g:message code="task.description.label" default="Description" /></span>
-					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${taskInstance}" field="description"/></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${taskInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -50,11 +41,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${taskInstance?.name}">
+				<g:if test="${taskInstance?.description}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="task.name.label" default="Name" /></span>
+					<span id="description-label" class="property-label"><g:message code="task.description.label" default="Description" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${taskInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${taskInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${taskInstance?.assignee}">
+				<li class="fieldcontain">
+					<span id="assignee-label" class="property-label"><g:message code="task.assignee.label" default="Assignee" /></span>
+					
+						<span class="property-value" aria-labelledby="assignee-label"><g:link controller="user" action="show" id="${taskInstance?.assignee?.id}">${taskInstance?.assignee?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

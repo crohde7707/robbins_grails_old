@@ -8,5 +8,8 @@ class Task {
 	static belongsTo = [assignee: User, project: Project]
 
     static constraints = {
+		name(blank: false)
+		dueDate()
+		description()
     }
 }

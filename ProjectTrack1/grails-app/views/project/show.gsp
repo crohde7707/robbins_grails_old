@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list project">
 			
-				<g:if test="${projectInstance?.description}">
+				<g:if test="${projectInstance?.name}">
 				<li class="fieldcontain">
-					<span id="description-label" class="property-label"><g:message code="project.description.label" default="Description" /></span>
+					<span id="name-label" class="property-label"><g:message code="project.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${projectInstance}" field="description"/></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${projectInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${projectInstance?.name}">
+				<g:if test="${projectInstance?.description}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="project.name.label" default="Name" /></span>
+					<span id="description-label" class="property-label"><g:message code="project.description.label" default="Description" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${projectInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${projectInstance}" field="description"/></span>
 					
 				</li>
 				</g:if>

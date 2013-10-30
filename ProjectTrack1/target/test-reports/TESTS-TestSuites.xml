@@ -1,26 +1,211 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="HEN12" id="0" name="ProjectTests" package="projecttrack1" tests="1" time="1.102" timestamp="2013-10-27T22:59:03">
+  <testsuite errors="0" failures="5" hostname="HEN12" id="0" name="ProjectControllerTests" package="projecttrack1" tests="8" time="4.066" timestamp="2013-10-30T01:17:07">
       <properties />
 
-      <testcase classname="projecttrack1.ProjectTests" name="testSomething" time="0.894">
-          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at projecttrack1.ProjectTests.testSomething(ProjectTests.groovy:15)
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testDelete" time="3.05">
+          <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testDelete(ProjectControllerTests.groovy:144)
 </failure>
 
       </testcase>
 
-      <system-out><![CDATA[--Output from testSomething--
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testUpdate" time="0.079">
+          <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testUpdate(ProjectControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testEdit" time="0.062">
+          <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testEdit(ProjectControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testSave" time="0.094">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/project/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/project/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6
+
+	at projecttrack1.ProjectControllerTests.testSave(ProjectControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testCreate" time="0.047" />
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testList" time="0.516" />
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testShow" time="0.062">
+          <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testShow(ProjectControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.ProjectControllerTests" name="testIndex" time="0.063" />
+
+      <system-out><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from testSomething--
+      <system-err><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="HEN12" id="1" name="TaskTests" package="projecttrack1" tests="1" time="0.151" timestamp="2013-10-27T22:59:04">
+  <testsuite errors="0" failures="0" hostname="HEN12" id="1" name="ProjectTests" package="projecttrack1" tests="1" time="0.609" timestamp="2013-10-30T01:17:11">
       <properties />
 
-      <testcase classname="projecttrack1.TaskTests" name="testSomething" time="0.071">
+      <testcase classname="projecttrack1.ProjectTests" name="testNoBlank" time="0.141" />
+
+      <system-out><![CDATA[--Output from testNoBlank--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testNoBlank--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="HEN12" id="2" name="TaskControllerTests" package="projecttrack1" tests="8" time="0.804" timestamp="2013-10-30T01:17:12">
+      <properties />
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testDelete" time="0.313">
+          <failure message="Assertion failed: &#xa;&#xa;assert task.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.Task : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert task.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.Task : (unsaved)
+
+	at projecttrack1.TaskControllerTests.testDelete(TaskControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testUpdate" time="0.062">
+          <failure message="Assertion failed: &#xa;&#xa;assert task.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.Task : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert task.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.Task : (unsaved)
+
+	at projecttrack1.TaskControllerTests.testUpdate(TaskControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testEdit" time="0.054">
+          <failure message="Assertion failed: &#xa;&#xa;assert task.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.Task : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert task.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.Task : (unsaved)
+
+	at projecttrack1.TaskControllerTests.testEdit(TaskControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testSave" time="0.063">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/task/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5dd999a3&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/task/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5dd999a3
+
+	at projecttrack1.TaskControllerTests.testSave(TaskControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testCreate" time="0.062" />
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testList" time="0.047" />
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testShow" time="0.062">
+          <failure message="Assertion failed: &#xa;&#xa;assert task.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.Task : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert task.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.Task : (unsaved)
+
+	at projecttrack1.TaskControllerTests.testShow(TaskControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.TaskControllerTests" name="testIndex" time="0.063" />
+
+      <system-out><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HEN12" id="3" name="TaskTests" package="projecttrack1" tests="1" time="0.156" timestamp="2013-10-30T01:17:13">
+      <properties />
+
+      <testcase classname="projecttrack1.TaskTests" name="testSomething" time="0.047">
           <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
 	at projecttrack1.TaskTests.testSomething(TaskTests.groovy:15)
 </failure>
@@ -34,10 +219,105 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="HEN12" id="2" name="UserTests" package="projecttrack1" tests="1" time="0.132" timestamp="2013-10-27T22:59:05">
+  <testsuite errors="0" failures="5" hostname="HEN12" id="4" name="UserControllerTests" package="projecttrack1" tests="8" time="0.845" timestamp="2013-10-30T01:17:13">
       <properties />
 
-      <testcase classname="projecttrack1.UserTests" name="testSomething" time="0.129">
+      <testcase classname="projecttrack1.UserControllerTests" name="testDelete" time="0.297">
+          <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testDelete(UserControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testUpdate" time="0.109">
+          <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testUpdate(UserControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testEdit" time="0.078">
+          <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testEdit(UserControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testSave" time="0.064">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/user/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/user/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c
+
+	at projecttrack1.UserControllerTests.testSave(UserControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testCreate" time="0.062" />
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testList" time="0.063" />
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testShow" time="0.062">
+          <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testShow(UserControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <testcase classname="projecttrack1.UserControllerTests" name="testIndex" time="0.047" />
+
+      <system-out><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HEN12" id="5" name="UserTests" package="projecttrack1" tests="1" time="0.062" timestamp="2013-10-30T01:17:14">
+      <properties />
+
+      <testcase classname="projecttrack1.UserTests" name="testSomething" time="0.047">
           <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
 	at projecttrack1.UserTests.testSomething(UserTests.groovy:15)
 </failure>

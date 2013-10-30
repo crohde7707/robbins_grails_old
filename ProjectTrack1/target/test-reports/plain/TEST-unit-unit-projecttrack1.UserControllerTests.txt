@@ -1,0 +1,116 @@
+Testsuite: projecttrack1.UserControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0.845 sec
+------------- Standard Output ---------------
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+------------- ---------------- ---------------
+
+Testcase: testDelete took 0.297 sec
+	FAILED
+Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testDelete(UserControllerTests.groovy:144)
+
+Testcase: testUpdate took 0.109 sec
+	FAILED
+Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testUpdate(UserControllerTests.groovy:100)
+
+Testcase: testEdit took 0.078 sec
+	FAILED
+Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testEdit(UserControllerTests.groovy:80)
+
+Testcase: testSave took 0.048 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/user/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/user/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c
+
+	at projecttrack1.UserControllerTests.testSave(UserControllerTests.groovy:48)
+
+Testcase: testCreate took 0.062 sec
+Testcase: testList took 0.063 sec
+Testcase: testShow took 0.062 sec
+	FAILED
+Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testShow(UserControllerTests.groovy:62)
+
+Testcase: testIndex took 0.047 sec

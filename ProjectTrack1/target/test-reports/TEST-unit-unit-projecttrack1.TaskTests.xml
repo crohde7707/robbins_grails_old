@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="HEN12" name="projecttrack1.TaskTests" tests="1" time="0.151" timestamp="2013-10-27T22:59:04">
+<testsuite errors="0" failures="1" hostname="HEN12" name="projecttrack1.TaskTests" tests="1" time="0.156" timestamp="2013-10-30T01:17:13">
   <properties />
-  <testcase classname="projecttrack1.TaskTests" name="testSomething" time="0.071">
+  <testcase classname="projecttrack1.TaskTests" name="testSomething" time="0.047">
     <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
 	at projecttrack1.TaskTests.testSomething(TaskTests.groovy:15)
 </failure>

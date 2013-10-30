@@ -1,0 +1,116 @@
+Testsuite: projecttrack1.ProjectControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 4.066 sec
+------------- Standard Output ---------------
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+------------- ---------------- ---------------
+
+Testcase: testDelete took 3.05 sec
+	FAILED
+Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testDelete(ProjectControllerTests.groovy:144)
+
+Testcase: testUpdate took 0.079 sec
+	FAILED
+Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testUpdate(ProjectControllerTests.groovy:100)
+
+Testcase: testEdit took 0.062 sec
+	FAILED
+Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testEdit(ProjectControllerTests.groovy:80)
+
+Testcase: testSave took 0.094 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/project/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/project/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6
+
+	at projecttrack1.ProjectControllerTests.testSave(ProjectControllerTests.groovy:48)
+
+Testcase: testCreate took 0.047 sec
+Testcase: testList took 0.516 sec
+Testcase: testShow took 0.062 sec
+	FAILED
+Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testShow(ProjectControllerTests.groovy:62)
+
+Testcase: testIndex took 0.063 sec

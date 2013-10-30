@@ -24,11 +24,11 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="description" title="${message(code: 'project.description.label', default: 'Description')}" />
+						<g:sortableColumn property="name" title="${message(code: 'project.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="dueDate" title="${message(code: 'project.dueDate.label', default: 'Due Date')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'project.name.label', default: 'Name')}" />
+						<g:sortableColumn property="description" title="${message(code: 'project.description.label', default: 'Description')}" />
 					
 						<th><g:message code="project.owner.label" default="Owner" /></th>
 					
@@ -38,11 +38,11 @@
 				<g:each in="${projectInstanceList}" status="i" var="projectInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "description")}</g:link></td>
+						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "name")}</g:link></td>
 					
 						<td><g:formatDate date="${projectInstance.dueDate}" /></td>
 					
-						<td>${fieldValue(bean: projectInstance, field: "name")}</td>
+						<td>${fieldValue(bean: projectInstance, field: "description")}</td>
 					
 						<td>${fieldValue(bean: projectInstance, field: "owner")}</td>
 					

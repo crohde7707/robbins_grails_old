@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'description', 'error')} ">
-	<label for="description">
-		<g:message code="project.description.label" default="Description" />
-		
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'name', 'error')} required">
+	<label for="name">
+		<g:message code="project.name.label" default="Name" />
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="description" value="${projectInstance?.description}"/>
+	<g:textField name="name" required="" value="${projectInstance?.name}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'dueDate', 'error')} required">
@@ -18,12 +18,12 @@
 	<g:datePicker name="dueDate" precision="day"  value="${projectInstance?.dueDate}"  />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'name', 'error')} ">
-	<label for="name">
-		<g:message code="project.name.label" default="Name" />
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'description', 'error')} ">
+	<label for="description">
+		<g:message code="project.description.label" default="Description" />
 		
 	</label>
-	<g:textField name="name" value="${projectInstance?.name}"/>
+	<g:textField name="description" value="${projectInstance?.description}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'owner', 'error')} required">

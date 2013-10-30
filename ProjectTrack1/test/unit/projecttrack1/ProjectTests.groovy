@@ -11,7 +11,11 @@ import org.junit.*
 @TestFor(Project)
 class ProjectTests {
 
-    void testSomething() {
-       fail "Implement me"
-    }
+	void testNoBlank() {
+		mockForConstraintsTests Project  //mocks the validate method for Project
+		
+		def proj = new Project(name: 'Kay', dueDate: new Date() + 1,
+			                   description: 'try me')
+//		assert proj.validate()
+	}
 }

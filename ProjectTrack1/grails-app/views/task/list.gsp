@@ -24,13 +24,13 @@
 				<thead>
 					<tr>
 					
-						<th><g:message code="task.assignee.label" default="Assignee" /></th>
-					
-						<g:sortableColumn property="description" title="${message(code: 'task.description.label', default: 'Description')}" />
+						<g:sortableColumn property="name" title="${message(code: 'task.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="dueDate" title="${message(code: 'task.dueDate.label', default: 'Due Date')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'task.name.label', default: 'Name')}" />
+						<g:sortableColumn property="description" title="${message(code: 'task.description.label', default: 'Description')}" />
+					
+						<th><g:message code="task.assignee.label" default="Assignee" /></th>
 					
 						<th><g:message code="task.project.label" default="Project" /></th>
 					
@@ -40,13 +40,13 @@
 				<g:each in="${taskInstanceList}" status="i" var="taskInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${taskInstance.id}">${fieldValue(bean: taskInstance, field: "assignee")}</g:link></td>
-					
-						<td>${fieldValue(bean: taskInstance, field: "description")}</td>
+						<td><g:link action="show" id="${taskInstance.id}">${fieldValue(bean: taskInstance, field: "name")}</g:link></td>
 					
 						<td><g:formatDate date="${taskInstance.dueDate}" /></td>
 					
-						<td>${fieldValue(bean: taskInstance, field: "name")}</td>
+						<td>${fieldValue(bean: taskInstance, field: "description")}</td>
+					
+						<td>${fieldValue(bean: taskInstance, field: "assignee")}</td>
 					
 						<td>${fieldValue(bean: taskInstance, field: "project")}</td>
 					

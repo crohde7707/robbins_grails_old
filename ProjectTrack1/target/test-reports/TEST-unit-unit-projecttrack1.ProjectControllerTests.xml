@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="HEN12" name="projecttrack1.ProjectControllerTests" tests="8" time="4.066" timestamp="2013-10-30T01:17:07">
+  <properties />
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testDelete" time="3.05">
+    <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testDelete(ProjectControllerTests.groovy:144)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testUpdate" time="0.079">
+    <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testUpdate(ProjectControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testEdit" time="0.062">
+    <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testEdit(ProjectControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testSave" time="0.094">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/project/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/project/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1fa3dbc6
+
+	at projecttrack1.ProjectControllerTests.testSave(ProjectControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testCreate" time="0.047" />
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testList" time="0.516" />
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testShow" time="0.062">
+    <failure message="Assertion failed: &#xa;&#xa;assert project.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       projecttrack1.Project : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert project.save() != null
+       |       |      |
+       |       null   false
+       projecttrack1.Project : (unsaved)
+
+	at projecttrack1.ProjectControllerTests.testShow(ProjectControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.ProjectControllerTests" name="testIndex" time="0.063" />
+  <system-out><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-out>
+  <system-err><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-err>
+</testsuite>

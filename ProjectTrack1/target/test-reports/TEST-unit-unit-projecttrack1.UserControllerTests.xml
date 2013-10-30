@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="HEN12" name="projecttrack1.UserControllerTests" tests="8" time="0.845" timestamp="2013-10-30T01:17:13">
+  <properties />
+  <testcase classname="projecttrack1.UserControllerTests" name="testDelete" time="0.297">
+    <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testDelete(UserControllerTests.groovy:144)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.UserControllerTests" name="testUpdate" time="0.109">
+    <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testUpdate(UserControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.UserControllerTests" name="testEdit" time="0.078">
+    <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testEdit(UserControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.UserControllerTests" name="testSave" time="0.064">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/user/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/user/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5461689c
+
+	at projecttrack1.UserControllerTests.testSave(UserControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.UserControllerTests" name="testCreate" time="0.062" />
+  <testcase classname="projecttrack1.UserControllerTests" name="testList" time="0.063" />
+  <testcase classname="projecttrack1.UserControllerTests" name="testShow" time="0.062">
+    <failure message="Assertion failed: &#xa;&#xa;assert user.save() != null&#xa;       |    |      |&#xa;       |    null   false&#xa;       projecttrack1.User : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert user.save() != null
+       |    |      |
+       |    null   false
+       projecttrack1.User : (unsaved)
+
+	at projecttrack1.UserControllerTests.testShow(UserControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <testcase classname="projecttrack1.UserControllerTests" name="testIndex" time="0.047" />
+  <system-out><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-out>
+  <system-err><![CDATA[--Output from testDelete--
+--Output from testUpdate--
+--Output from testEdit--
+--Output from testSave--
+--Output from testCreate--
+--Output from testList--
+--Output from testShow--
+--Output from testIndex--
+]]></system-err>
+</testsuite>
